@@ -29,4 +29,4 @@ Cette application web est conçue pour répondre aux besoins de l'industrie de l
 
 ### Étapes
 
-![WhatsApp Image 2024-07-02 at 22 08 50_6accf608](https://github.com/user-attachments/assets/e4230814-23ae-4f7b-bcf3-aa8e6a2b3927)
+[Uploading restaurant_management.pdf…]()
