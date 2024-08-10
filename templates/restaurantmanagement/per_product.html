@@ -1,0 +1,69 @@
+{% extends '../layout.html' %}
+{% block content %}
+<div class="content-section">
+    <div class="row mx-auto justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="cart-title text-center">Nom de l'aliment</h5>
+                <div style="font-size: 30px;" class="text-center">
+                    <span><i class="fa-solid fa-bowl-food"></i></span>
+                </div>
+                <h3 class="text-center">{{aliment.Nom}}</h3>
+            </div>
+        </div>
+
+        <div class="card m-4" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="cart-title text-center">Prix de {{ aliment.Nom }}</h5>
+                <div style="font-size: 30px;" class="text-center">
+                    <span><i class="fas fa-dollar-sign"></i></span>
+                </div>
+                <h3 class="text-center">{{ aliment.Prix_par_aliment }}</h3>
+            </div>
+        </div>
+
+        <div class="card m-4" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="cart-title text-center">Quantite dans le stock</h5>
+                <div style="font-size: 30px;" class="text-center">
+                    <span><i class="fas fa-warehouse"></i></span>
+                </div>
+                <h3 class="text-center">{{ aliment.Quantite_dans_le_stock }}</h3>
+            </div>
+        </div>
+
+        <div class="card m-4" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="cart-title text-center">Quantite vendus</h5>
+                <div style="font-size: 30px;" class="text-center">
+                    <span><i class="fas fa-dollar-sign"></i></span>
+                </div>
+                <h3 class="text-center">{{ aliment.Quantite_vendus }}</h3>
+            </div>
+        </div>
+
+        <div class="card m-4" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="cart-title text-center">Date du stock</h5>
+                <div style="font-size: 30px;" class="text-center">
+                    <span><i class="fas fa-calendar-alt"></i></span>
+                </div>
+                <h3 class="text-center">{{ aliment.Date_du_stock }}</h3>
+            </div>
+        </div>
+
+        <div class="card m-4" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="cart-title text-center">Derniere date de vente</h5>
+                <div style="font-size: 30px;" class="text-center">
+                    <span><i class="fas fa-calendar-alt"></i></span>
+                </div>
+                <h3 class="text-center">{{ aliment.Derniere_date_de_vente}}</h3>
+            </div>
+        </div>
+        <a class="btn btn-danger btn-sm mb-3" href="{% url 'delete_aliment' aliment.id %}">Supprimer un aliment</a>
+        <a class="btn btn-outline-success btn-sm" href="{% url 'update_aliment' aliment.id %}">Modifier un aliment</a>
+
+    </div>
+</div>
+{% endblock %}

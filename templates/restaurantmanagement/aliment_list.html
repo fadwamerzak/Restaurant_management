@@ -1,0 +1,32 @@
+{% extends '../layout.html' %}
+{% block content %}
+<div class="content-section">
+    <table class="table table-striped table-bordered table-hovet">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Prix par aliment</th>
+                <th scope="col">Quantite dans le stock</th>
+                <th scope="col">Quantite vendus</th>
+                <th scope="col">Date du stock</th>
+                <th scope="col">Derniere date de vente</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for aliment in aliments %}
+                <tr style='cursor: pointer; cursor: hand;' onclick="window.location=`{% url 'per_product' aliment.id %}`">
+                    <th scope="row">{{ forloop.counter }}</th>
+                    <th scope="row">{{ aliment.Nom }}</th>
+                    <th scope="row">{{ aliment.Prix_par_aliment }}</th>
+                    <th scope="row">{{ aliment.Quantite_dans_le_stock }}</th>
+                    <th scope="row">{{ aliment.Quantite_vendus }}</th>
+                    <th scope="row">{{ aliment.Date_du_stock }}</th>
+                    <th scope="row">{{ aliment.Derniere_date_de_vente}}</th>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
