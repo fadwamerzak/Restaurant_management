@@ -29,4 +29,4 @@ Cette application web est conçue pour répondre aux besoins de l'industrie de l
 
 ### Étapes
 
-You can check : restaurant_management.pdf
+You can check : https://github.com/fadwamerzak/Restaurant_management/blob/master/restaurant_management.pdf
