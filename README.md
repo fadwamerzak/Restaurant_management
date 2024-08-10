@@ -28,6 +28,4 @@ Cette application web est conçue pour répondre aux besoins de l'industrie de l
 - pip (gestionnaire de packages Python)
 
 ### Étapes
-1. Cloner le dépôt :
-   ```bash
-   git clone https://github.com/votre-utilisateur/votre-repo.git
+
